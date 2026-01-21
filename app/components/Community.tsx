@@ -27,14 +27,14 @@ const Community = () => {
     },
   ];
   return (
-    <section className="mt-14 bg-[#e8f5e24d]">
+    <section className="mt-14 bg-[#e8f5e24d] pb-16">
       <div className="w-[93%] m-auto pt-18">
         <h1 className="text-center sm:text-3xl text-2xl font-bold pb-14">
           Hear from our community{" "}
         </h1>
-        <div>
+        <div className="flex gap-6 flex-wrap">
           {reviews.map((review) => (
-            <div key={review.id}>
+            <div key={review.id} className="bg-white grow basis-50 px-7 py-5 rounded-2xl">
               <div className="flex">
                 <MdOutlineStarPurple500 fill="#3ea40b" />
                 <MdOutlineStarPurple500 fill="#3ea40b" />
@@ -42,16 +42,16 @@ const Community = () => {
                 <MdOutlineStarPurple500 fill="#3ea40b" />
                 <MdOutlineStarPurple500 fill="#3ea40b" />
               </div>
-              <div>
-                <p>{review.text}</p>
+              <div className="py-4">
+                <p className="italic md:text-base text-sm text-gray-500">&quot;{review.text}&quot;</p>
               </div>
-              <div>
-                <div>
-                  <p>{review.icon}</p>
+              <div className="flex items-center gap-3">
+                <div className="bg-[#3ea40b33] flex items-center justify-center h-9 w-9 rounded-full">
+                  <p className="text-[#3ea40b] font-semibold">{review.icon}</p>
                 </div>
                 <div>
-                    <p>{review.name}</p>
-                    <p>{review.profession}</p>
+                    <p className="font-semibold">{review.name}</p>
+                    <p className="text-gray-500 text-sm">{review.profession}</p>
                 </div>
               </div>
             </div>
