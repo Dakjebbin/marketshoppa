@@ -1,0 +1,89 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <div
+      className={`sticky top-0 z-50 transition-all duration-300
+      ${
+        isScrolled
+          ? "bg-white/30 backdrop-blur-sm shadow-md"
+          : "bg-white/10 backdrop-blur-lg"
+      }`}
+    >
+      <header className="flex px-8 py-5 items-center justify-between">
+        <Link href="/" className="flex gap-2 items-center cursor-pointer">
+          <div className="bg-[#3ea40b] fill-white inline-flex p-2 rounded-xl hover:rotate-6 duration-150 ease-in">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-shopping-bag text-black w-6 h-6"
+              aria-hidden="true"
+            >
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+              <path d="M3.103 6.034h17.794"></path>
+              <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
+            </svg>
+          </div>
+
+          <p className="font-bold text-xl">MarketShoppa</p>
+        </Link>
+        <nav className="md:flex hidden gap-6 items-center">
+          <a
+            className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
+            href="#"
+          >
+            How it Works
+          </a>
+          <a
+            className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
+            href="#"
+          >
+            Browse
+          </a>
+          <a
+            className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
+            href="#"
+          >
+            Pricing
+          </a>
+          <a
+            className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
+            href="#"
+          >
+            About
+          </a>
+
+          <button className="bg-[#3ea40b] text-white px-5 py-2 rounded-3xl font-semibold">
+            Start Shopping
+          </button>
+        </nav>
+      </header>
+    </div>
+  );
+};
+
+export default Header;
