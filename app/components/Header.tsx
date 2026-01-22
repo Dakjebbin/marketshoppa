@@ -59,7 +59,7 @@ const Header = () => {
         </Link>
         <nav className="md:flex hidden gap-6 items-center">
           <Link
-            href="/howitworks"
+            href="/pages/howitworks"
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
           >
             How it Works
@@ -90,19 +90,24 @@ const Header = () => {
         {/* mobile screen */}
         <nav className="md:hidden flex">
           {navActive ? (
-            <div onClick={toggleNav}>
+            <button onClick={toggleNav}>
               <IoCloseSharp className="cursor-pointer" size={27} />
-            </div>
+            </button>
           ) : (
-            <div onClick={toggleNav}>
+            <button onClick={toggleNav}>
               <RxHamburgerMenu className="cursor-pointer" size={25} />
-            </div>
+            </button>
           )}
          
             <div className={`absolute bg-white top-full left-0 right-0 overflow-hidden transition-all duration-300 ease-in-out ${navActive ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"}`}>
-              <ul className=" w-[90%] [&_li]:font-bold flex flex-col gap-8 py-6 [&_li]:text-xl m-auto  ">
-                <li>Home</li>
-                <li>How it Works</li>
+              <ul onClick={toggleNav} className=" w-[90%] [&_li]:font-bold flex flex-col gap-8 py-6 [&_li]:text-xl m-auto  ">
+                <li>
+                <Link href="/">Home
+                </Link>
+                </li>
+                <li>
+                <Link href="/pages/howitworks">How it Works</Link>
+                </li>
                 <li>Browse Categories</li>
                 <li>Pricing</li>
                 <li>About Us</li>
