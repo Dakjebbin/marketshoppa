@@ -1,5 +1,5 @@
 "use client";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -52,12 +52,11 @@ const Header = () => {
           <p className="font-bold text-xl">MarketShoppa</p>
         </Link>
         <nav className="md:flex hidden gap-6 items-center">
-          <a
+          <Link href="/howitworks"
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
-            href="#"
           >
             How it Works
-          </a>
+          </Link>
           <a
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
             href="#"
@@ -80,6 +79,27 @@ const Header = () => {
           <button className="bg-[#3ea40b] text-white px-5 py-2 rounded-3xl font-semibold">
             Start Shopping
           </button>
+        </nav>
+        {/* mobile screen */}
+        <nav className="md:hidden flex">
+          <div>
+            <RxHamburgerMenu className="cursor-pointer"  size={25}/>
+          </div>
+<div className="absolute bg-white top-18 left-0 right-0">
+          <ul className=" w-[90%] [&_li]:font-bold flex flex-col gap-8 py-6 [&_li]:text-xl m-auto  ">
+            <li>Home</li>
+            <li>How it Works</li>
+            <li>Browse Categories</li>
+            <li>Pricing</li>
+            <li>About Us</li>
+          </ul>
+
+          <div className="py-12 w-[90%] m-auto">
+          <button className="w-full rounded-full cursor-pointer font-semibold transition-all duration-300 flex items-center justify-center bg-[#3ea40b] text-white px-4 md:px-8 py-4 text-lg">
+                Start My List 
+              </button>
+          </div>
+          </div>
         </nav>
       </header>
     </div>
