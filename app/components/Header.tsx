@@ -100,7 +100,7 @@ const Header = () => {
           )}
          
             <div className={`absolute bg-white top-full left-0 right-0 overflow-hidden transition-all duration-300 ease-in-out ${navActive ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"}`}>
-              <ul onClick={toggleNav} className=" w-[90%] [&_li]:font-bold flex flex-col gap-8 py-6 [&_li]:text-xl m-auto  ">
+              <ul onClick={toggleNav} className=" w-[90%] [&_li]:font-bold flex flex-col gap-8 py-6 [&_li]:text-xl [&_li]:hover:text-[#3ea40b] m-auto  ">
                 <li>
                 <Link href="/">Home
                 </Link>
