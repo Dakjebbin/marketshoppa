@@ -23,7 +23,7 @@ const FluctuatingMarket = () => {
                     </div>
 
                     <div className='my-3'>
-                    <button className='bg-[#3ea40b] px-2 py-2 text-white font-semibold rounded-2xl'>I&apos;m ready to shop</button>
+                    <button className='bg-[#3ea40b] px-4 py-2 text-white font-semibold rounded-3xl'>I&apos;m ready to shop</button>
                     </div>
                     
                 </div> 
