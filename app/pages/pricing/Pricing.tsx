@@ -7,9 +7,10 @@ const Pricing = () => {
         <div className="mt-20">
           <h1 className="sm:text-3xl text-2xl font-bold mb-5">Pricing & Transparency</h1>
           <p className="sm:pl-15 pl-10 mb-8 text-gray-400 sm:text-[18px] text-[14px]">
-            At MartketShoppa, we believe trust starts with being open about
+          <p className="sm:pl-15 pl-10 mb-8 text-gray-400 sm:text-[18px] text-[14px]">
+            At MarketMate, we believe trust starts with being open about
             costs. No hidden fees, no markup games.
-          </p>
+          </p>          </p>
         </div>
         <div className="flex flex-wrap gap-6">
           <div className="grow flex flex-col gap-5 basis-70">
@@ -67,7 +68,7 @@ const Pricing = () => {
             <h1 className="sm:text-2xl text-xl font-bold mb-7">The Receipt Guarantee</h1>
             <p className="text-gray-400 sm:text-[18px] text-[15px] font-light">
               For every order, your shopper will provide the physical original
-              receipt from the supermarket or a MarketMate digital verification
+              receipt from the supermarket or a MarketShoppa digital verification
               for open-market sellers who don&apos;t issue receipts.
             </p>
 
@@ -102,8 +103,7 @@ const Pricing = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star text-beige" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
                   </div>
                   <div>
-                    <p className="font-semibold">Quality First Policy</p>
-                    <p className="text-sm text-gray-500 font-light">If it&apos;s not fresh, we don&apos;t buy it. You approve every substitution..</p>
+                    <p className="text-sm text-gray-500 font-light">If it&apos;s not fresh, we don&apos;t buy it. You approve every substitution.</p>                    <p className="text-sm text-gray-500 font-light">If it&apos;s not fresh, we don&apos;t buy it. You approve every substitution..</p>
                   </div>
                 </div>
              </div>
