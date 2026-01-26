@@ -10,7 +10,7 @@ const outfit = Outfit({
 
 
 export const metadata: Metadata = {
-  title: "Market Mate",
+  title: "Market Shoppa",
   description: "Your No 1 Errand Boy",
 };
 
