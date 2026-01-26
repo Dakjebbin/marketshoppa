@@ -22,7 +22,7 @@ const FluctuatingMarket = () => {
                         </div>
                     </div>
 
-                    <div className='my-3'>
+                    <div className='my-7 flex justify-center'>
                     <button className='bg-[#3ea40b] px-4 py-2 text-white font-semibold rounded-3xl'>I&apos;m ready to shop</button>
                     </div>
                     

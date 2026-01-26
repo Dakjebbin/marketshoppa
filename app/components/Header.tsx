@@ -70,12 +70,12 @@ const Header = () => {
           >
             Browse
           </a>
-          <a
+          <Link
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
-            href="#"
+            href="/pages/pricing"
           >
             Pricing
-          </a>
+          </Link>
           <a
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
             href="#"
@@ -109,7 +109,8 @@ const Header = () => {
                 <Link href="/pages/howitworks">How it Works</Link>
                 </li>
                 <li>Browse Categories</li>
-                <li>Pricing</li>
+                <li>
+                  <Link href="/pages/pricing">Pricing</Link></li>
                 <li>About Us</li>
               </ul>
 
