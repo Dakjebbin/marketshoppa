@@ -36,10 +36,10 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-600">Call/Whatsapp</p>
-                <a className="font-semibold" href="tel:+234 9164774182">
-                  +234 (0) 9164774182
-                </a>
-              </div>
+                <a className="font-semibold" href="tel:+2349164774182">
+                  234 (0) 9164774182
+                </a>           
+                   </div>
             </div>
 
             <div className="flex items-center gap-3">
