@@ -7,11 +7,9 @@ const Pricing = () => {
         <div className="mt-20">
           <h1 className="sm:text-3xl text-2xl font-bold mb-5">Pricing & Transparency</h1>
           <p className="sm:pl-15 pl-10 mb-8 text-gray-400 sm:text-[18px] text-[14px]">
-          <p className="sm:pl-15 pl-10 mb-8 text-gray-400 sm:text-[18px] text-[14px]">
-            At MarketMate, we believe trust starts with being open about
+            At MarketShoppa, we believe trust starts with being open about
             costs. No hidden fees, no markup games.
-          </p>          </p>
-        </div>
+          </p>        </div>
         <div className="flex flex-wrap gap-6">
           <div className="grow flex flex-col gap-5 basis-70">
             <div className="relative bg-white p-10 rounded-[3rem] border border-gray-100 shadow-sm overflow-hidden">
