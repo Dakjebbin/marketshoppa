@@ -58,24 +58,26 @@ const Contact = () => {
 
         <div className="bg-white rounded-2xl px-7 py-5">
           <form>
-            <div className="flex items-center justify-between gap-3">
-              <span>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+              <span className="flex flex-col gap-3">
                 <label className="font-semibold text-sm text-gray-500">Full name</label>
-                <input className="px-2 py-3 outline outline-[#3ea40b] w-[50%] bg-gray-50" type="text" placeholder="John Doe" />
+                <input className="px-5 py-3 outline-2 outline-gray-50 rounded-2xl focus:outline-[#3ea40b] w-full bg-gray-50" type="text" placeholder="John Doe" />
               </span>
 
-              <span>
+              <span className="flex flex-col gap-3">
                 <label className="font-semibold text-sm text-gray-500">Email address</label>
-                <input className="w-[50%]" type="email" placeholder="john@example.com" />
+                <input className="px-5 py-3 outline-2 outline-gray-50 rounded-2xl focus:outline-[#3ea40b] w-full bg-gray-50" type="email" placeholder="john@example.com" />
               </span>
             </div>
 
-            <div>
-                <label>Message</label>
-                <textarea placeholder="How can we help?" name="" id=""></textarea>
+            <div className="flex flex-col gap-3">
+                <label className="font-semibold text-sm text-gray-500">Message</label>
+                <textarea className="px-5 py-3 outline-2 outline-gray-50 rounded-2xl focus:outline-[#3ea40b] w-full bg-gray-50" placeholder="How can we help?" cols={30} rows={5} name="" id=""></textarea>
             </div>
 
-            <button>Send Message</button>
+<div className="my-7 bg-[#3ea40b] px-2 py-3 flex items-center justify-center rounded-2xl text-white font-semibold cursor-pointer">
+            <button type="submit">Send Message</button>
+            </div>
           </form>
         </div>
       </div>

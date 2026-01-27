@@ -64,12 +64,12 @@ ${
           >
             How it Works
           </Link>
-          <a
+          <Link
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
-            href="#"
+             href="/pages/products"
           >
             Browse
-          </a>
+          </Link>
           <Link
             className="font-semibold text-[#4b5563] hover:text-[#3ea40b]"
             href="/pages/pricing"
@@ -116,7 +116,9 @@ ${
               <li>
                 <Link href="/pages/howitworks">How it Works</Link>
               </li>
-              <li>Browse Categories</li>
+              <li>
+              <Link href="/pages/products">Browse Categories</Link>
+                </li>
               <li>
                 <Link href="/pages/pricing">Pricing</Link>
               </li>
